@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="index page pizza ordering website">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Website - Order</title>
+    <link rel="stylesheet" href="styleorder.css">
+</head>
+
+<body>
+    <header>
+        <h1>Order Your Pizza</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Order Form</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+
+                <label for="pizza">Choose your pizza:</label>
+                <select id="pizza" name="pizza" required>
+                    <option value="cheese">Cheese Pizza</option>
+                    <option value="pepperoni">Pepperoni Pizza</option>
+                    <option value="hawaiian">Hawaiian Pizza</option>
+                </select>
+                <br>
+
+                <label for="size">Select size:</label>
+                <input type="radio" id="small" name="size" value="Small" required>
+                <label for="small">Small</label>
+                <input type="radio" id="medium" name="size" value="Medium" required>
+                <label for="medium">Medium</label>
+                <input type="radio" id="large" name="size" value="Large" required>
+                <label for="large">Large</label>
+                <br>
+
+                <label for="toppings">Select toppings (hold Ctrl/Cmd to select multiple):</label>
+                <select id="toppings" name="toppings[]" multiple required>
+                    <option value="mushrooms">Mushrooms</option>
+                    <option value="olives">Olives</option>
+                    <option value="peppers">Peppers</option>
+                    <option value="onions">Onions</option>
+                </select>
+                <br>
+
+                <label for="delivery">Delivery Address:</label>
+                <textarea id="delivery" name="delivery" rows="4" cols="40" required></textarea>
+                <br>
+
+                <label for="payment">Payment method:</label>
+                <input type="checkbox" id="credit" name="payment" value="Credit Card" required>
+                <label for="credit">Credit Card</label>
+                <input type="checkbox" id="cash" name="payment" value="Cash on Delivery" required>
+                <label for="cash">Cash on Delivery</label>
+                <br>
+
+                <input type="submit" id="button" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
